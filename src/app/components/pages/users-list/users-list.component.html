@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let git of gits" class="col-md-3">
+
+
+
+            <div class="card" style="width: 17rem;">
+                <img src="{{git.avatar_url}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{git.name}}</h5>
+                    <a href="{{git.html_url}}" target="_blank" class="btn btn-primary">About</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
